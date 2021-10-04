@@ -1,0 +1,289 @@
+* { padding: 0; margin: 0; }
+p{
+    margin: 0;
+}
+body { 
+    background: rgb(255, 204, 221);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+}
+header{
+    text-align: center;
+    background-size: 100%;
+    color: #002211;
+    background: rgb(0, 34, 17);
+    background-position: center;
+}
+#link a{
+    font-size: 30px;
+    list-style-type: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #003311;
+    text-decoration: #03311;
+}
+.container{
+    background: #ffeeee;
+}
+.StylePhoto{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 5px;
+}
+.text{
+    font-size: 20px;
+    font-weight: bold;
+    color: #03311;
+}
+#im{
+    border: 2px solid #003311;
+    max-height: 50px;
+    min-height: auto;
+    max-width: 50px;
+    min-width: auto;
+}
+.ima{
+    border: 2px solid #003311;
+    margin: auto;
+    height: auto;
+    width: 50%;
+    max-width: 300px;
+}
+
+#NTL a{
+    font-size: 20px;
+    color:#003311;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: #11aa77;
+}
+
+#headbuild {
+    border: 2px solid #003311;
+    width: 100px;
+    height:100px;
+    max-width: auto;
+    max-height: auto;
+}
+
+header::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+main{
+    width: 100%;
+    background: #003311;
+    margin-left: 2%;
+    color:black;
+    font-weight: bold;
+}
+nav{
+    background-color: #ffeeee;
+    width: 30%;
+    display: flex;
+}
+
+#navig {
+    text-align: center;
+    display: inline;
+}
+
+#navig a {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #003311;
+    padding: 5px 10px;
+    text-decoration: #03311;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    width: auto;
+}
+
+#navig a:hover {
+    background-color: #106d42fd;
+}
+
+table {
+    empty-cells: hide;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #03311;
+}
+
+td {
+    text-align: center;
+    border: 1px solid #03311;
+}
+
+td:first-child {
+    text-align: center;
+    color: #000000fd;
+    font-weight: normal;
+}
+
+th {
+    padding: 10px 20px;
+    background-color: #11aa77;
+    color: #000000fd;
+}
+
+td:nth-child(even) {
+    background: #448866;
+    color:#03311fd;
+    
+}
+
+td:nth-child(odd) {
+    background: #11aa77;
+    color:#03311fd;
+}
+
+th:nth-child(even) {
+    background: #448866;
+    color: #03311fd;
+}
+
+footer {
+    height: 100px;
+    width: 100%;
+    margin-top: 10px;
+    color: #002211fd;
+    background-color: #559977;
+    background-position: center;
+    background-size: 100%;
+}
+
+.textfoot{
+    text-align: end;
+    margin-right: 20px;
+    padding-top: 25px;
+    font-size: 25px;
+}
+main{
+    order: 2;
+    flex: 3;
+}
+nav{
+    flex: 1;
+    order: 1;
+}
+#pack1{
+    margin: 2%;
+    display: inline-flex;
+}
+
+.forma{
+    width: 100%;
+    max-width: auto;
+    margin-top: 2%;
+	border-radius: 10px;
+	text-align: center;
+}
+.forma1{
+    width: 100%;
+    max-width: 100%;
+    margin-top: 2%;
+	border-radius: 10px;
+	text-align: center;
+}
+#pack2{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.forma1{
+    order: 1;
+}
+table{
+    order:2;
+}
+li{
+    list-style: none;
+}
+@media only screen 
+and (min-width : 550px)
+{
+    header{
+        background: #559977;
+        text-align: left;
+    }
+    #pack1{
+        margin: 0;
+        text-align: center;
+        flex-direction: column;
+    }
+    #pack2{
+        flex-direction: column;
+    }
+    #imaAll{
+        width: 50%;
+    }
+    .forma1{
+        margin: auto;
+        width: 50%;
+        max-width: 350px;
+        order: 3;
+    }
+    .forma{
+        margin: auto;
+        width: 50%;
+        max-width: 350px;
+        margin-bottom: 2%;
+    }
+    .forma{
+        order: 2;
+    }
+    .forma1{
+        order: 3;
+    }
+    table{
+        order:1;
+    }
+    main{
+        
+        padding: auto;
+        margin: auto;
+        margin-bottom: 2%;
+        width: 90%;
+        height: 50%;
+    }
+    #headbuild{
+        max-width: 100px;
+        max-height:100px;
+        min-width: auto;
+        min-height: auto;
+        margin: 5px;
+        border-radius: 5px;
+        flex: 2;
+        order: 1;
+	    float:left;
+    }
+    nav{
+        text-align: center;
+        width: auto;
+        margin: auto;
+        margin-bottom: 2%;
+        margin-top: 0;
+    }
+    #navbar a{
+        display: inline-block;
+    }
+    table {
+        border-spacing: 1px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    td {
+        padding: auto;
+        text-align: center;
+        border: 1px solid #559977;
+    }
+}
+@media only screen and(min-width: 1224px)
+{
+    
+}
