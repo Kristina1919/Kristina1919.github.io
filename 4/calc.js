@@ -1,10 +1,16 @@
-function calc() {
-    let pr = document.getElementsByName("pr");
-    let num = document.getElementsByName("num");
-    let res = document.getElementById("res");
-    let re = /\D/;
-    if ((pr[0].value.match(re) || num[0].value.match(re)) === null)
-    res.innerHTML = ("И у нас получается: " + parseInt(pr[0].value, 10) * parseInt(num[0].value, 10));
-    else res.innerHTML = "Что-то пошло не так...";
-    return false;
+window.addEventListener("DOMContentLoaded", function () {
+    const b = document.getElementById("btn-count");
+    b.addEventListener("click", countPrice);
+});
+function countPrice(event) {
+    event.preventDefault();
+    const price = document.getElementById("price");
+    const count = document.getElementById("num");
+    const total = document.getElementById("total");
+    let result = price.value * count.value;
+    if (!Number.isNaN(result)) {
+        total.value = result;
+    } else {
+        alert("Допущена ошибка при вводе данных!");
+    }
 }
