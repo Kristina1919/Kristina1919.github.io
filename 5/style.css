@@ -1,0 +1,75 @@
+*{
+    padding: 0px;
+    font-family: cursive;
+}
+html{
+    width: 100%;
+    
+    margin: 0;
+}
+body{
+    background: rgb(79, 122, 163);
+    text-align: center;
+    background-size: cover;
+}
+header{
+    padding-top: 0;
+    background: url(gr1.jpg);
+    background-size: cover;
+    width: 100%;
+    max-height: 50%;
+    border-bottom: solid black 2px;
+    
+}
+.Blackbord{
+    margin:auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 30%;
+    border: black solid 2px;
+}
+#Cheki{
+    margin:auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 30%;
+    border: black solid 2px;
+}
+.MenuPrice{
+    margin-top:10px;
+}
+.StylePhoto{
+    height: 250px;
+    width: 250px;
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: black solid 2px;
+
+}
+.text_header{
+    display: inline;
+    color: rgb(138, 145, 40);
+    font-size: 30px;
+    font-weight: bold;
+    order: 2;
+    flex: 1;
+}
+p{
+    padding: 0px;
+    margin: 0px;
+}
+.container-fluid{ 
+    flex-direction: column;
+    max-width: 700px;
+    min-width: 500px;
+    font-size: 20px;
+    margin-top: 10px;
+    background: rgb(138, 145, 40);
+    border-radius: 10px;
+}
+footer{
+    margin-top: 5px;
+    background: rgb(173, 140, 30);
+    height: 40px;
+}
