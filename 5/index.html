@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta name="description" content="Разведение Усть-лабинских кепоголовых уток. Продажа, скрещивание, Скупка и Раскрутка кепоголовых уточек прямиком из Усть-Лабинска. Дешево в Краснодаре. Купить. Продать. Удивиться">
+        <meta charset = "UTF-8">
+        <meta name="title" content="Усть-лабинская Кепоголовая утка">
+        <title>Купить Крутую Утку</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="Scrypt.js"></script>
+    </head>
+    <body>
+        <header>
+                <div class="text_header">Купить Утку</div>
+        </header>
+        <div itemscope itemtype="http://schema.org/Product ">
+            <div class="container-fluid">
+                <img  itemprop="image" alt="image" src=1.jpg class="StylePhoto">
+                <br>
+                <span class="text-justify" itemprop="name">Усть-лабинская кепоголовая утка</span>
+                <span itemprop="description">Утка Кепоголовая. Сутками ловилась в подворотнях Усть-Лабинска. Есть всё(от камней до себе подобных). Способна приносить соседские тапки прямиком к вашему дивану. Не подлежит возврату. Не знаем, что от нее ожидать. !!Будьте внимательны.</span>
+                <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                    <span itemprop="price">5790</span> <span itemprop="priceCurrency">RUB</span>
+                    <div>В наличии</div>
+                    <link itemprop="availability" href="http://schema.org/InStock">
+                </div>
+                <img src="2.jpg" alt="123" class="StylePhoto">
+            </div>
+        </div>
+        <div class="MenuPrice">
+            <form>
+                <div class="Blackbord">
+                    <p><select size="5" multiple name="pets[]">
+                        <option disabled onclick="pet()">Выберите Вид</option>
+                        <option selected value="1212" onclick="pet(1)">Левокрылая</option>
+                        <option  value="232" onclick="pet(2)">Правокрылая</option>
+                        <option value="343" onclick="pet(3)">Тонконогая</option>
+                        <option value="423" onclick="pet(4)">Толстоногая</option>
+                    </select></p>
+                </div>  
+                <div id="Cheki" hidden="true">
+                    <p>
+                        <label id="p1">
+                            <input name="package" type="radio" value="p1" onchange="upd()">Штаны уточные
+                        </label>
+                    </p>
+                    <br>
+                    <p>
+                        <label id="p2">
+                            <input name="package" type="radio" value="p2" onchange="upd()">Джинсовый шмот
+                        </label>
+                    </p>
+                    <br>
+                    <p>
+                        <label id="p3">
+                            <input name="package" type="radio" value="p3" onchange="upd()" checked>Кросовки
+                        </label>
+                    </p>
+                </div>
+                
+                <div id="HiddenPanel" hidden=true>
+                    <div class="Blackbord">
+                        <p>Услуги:</p>
+                        <p>
+                            <label id="c1">
+                                <input name="box1" type="checkbox" onchange="upd()">Доставка в клетке
+                            </label>
+                        </p>
+                        <br>
+                        <p>
+                            <label id="c2">
+                                <input name="box1" type="checkbox" onchange="upd()">Доставка в руках
+                            </label>
+                        </p>
+                        <br>
+                        <p>
+                            <label id="c3">
+                                <input name="box1" type="checkbox" onchange="upd()">Доставка пинками
+                            </label>
+                        </p>
+                        <br>
+                        <p>
+                            <label id="c4">
+                                <input name="box1" type="checkbox" onchange="upd()">Доставка своим ходом
+                            </label>
+                        </p>
+                    </div>    
+                </div>
+                <div class="Blackbord">
+                    <p>
+                        <label>
+                            Введите кол-во:
+                            <input type="number" id="kol-vo" min="0" max="1500" value="1rub" onchange="upd()">
+                        </label>
+                    </p>
+                    <p><input type="text" readonly id="tb" maxlength="25" value="0"></p>
+                    <input type="button" value="Заказать!" onclick="al()"/>
+                </div>
+            </form>
+        </div>
+        <footer>
+            <p>©All rights reserved</p>
+        </footer>
+    </body>
+</html>
