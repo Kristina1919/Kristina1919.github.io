@@ -1,0 +1,29 @@
+.slider
+{
+    margin-left:10vw;
+    margin-right:10vw;
+    width:80vw;
+    text-align:center;
+}
+.slick-slider{
+    min-width: 0;
+}
+.slick-track{
+    display: flex;
+    align-items: flex-start;
+}
+.slick-list {
+
+    overflow: hidden;
+
+}
+.slider__item {
+    padding: 0 15px;
+}
+
+.slider__item img{
+    max-width: 100%;
+}
+.Pager{
+    text-align:center;
+}
